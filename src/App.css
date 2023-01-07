@@ -52,6 +52,16 @@
   width: 800px;
 }
 
+#submit {
+  cursor: pointer;
+  border-color: aliceblue;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  background-color: rgb(96, 99, 98);
+}
+
 .divContacto{
   width: 50%;
   position: relative;

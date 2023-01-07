@@ -11,9 +11,10 @@ function App() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_bbzacpu', 'template_doyfvbq', form.current, 'Rh_dzfVVKjT3CiUZz')
       .then((result) => {
           console.log(result.text);
+          alert('Su mensaje ha sido enviado a Martin');
       }, (error) => {
           console.log(error.text);
       });
@@ -30,8 +31,8 @@ function App() {
           <label>Email: </label>
           <input placeholder='Your@email' type="email" name="user_email" />
           <label>Message: </label>
-          <textarea rows='6' placeholder='Please, leave a message here for Martin'/>
-          <input type="submit" value="Send" />
+          <textarea name='message' rows='6' placeholder='Please, leave a message here for Martin'/>
+          <input id='submit' type="submit" value="Send" />
         </form>
         </div>
         <div className='divContacto'>
