@@ -1,6 +1,11 @@
 import './App.css';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import telephone from './telephone.png';
+import email from './email.png';
+import address from './marcador-de-posicion.png';
+
+
 function App() {
   const form = useRef();
   const sendEmail = (e) => {
@@ -32,9 +37,9 @@ function App() {
         <div className='divContacto'>
           <div className='informacion'>
             <h4>Contact information</h4>
-            <p>Phone</p>
-            <p>email</p>
-            <p>Address</p>
+            <p><img src={telephone}/>4493947674</p>
+            <p><img src={email}/>martinmarescr@gmail.com</p>
+            <p><img src={address}/>Aguascalientes</p>
           </div>
         </div>
         </div>

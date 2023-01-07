@@ -13,6 +13,11 @@
   overflow: hidden;
 }
 
+.contact-section h3{
+  text-align: center;
+  margin-top: 50px;
+}
+
 .separador{
   width: 100%;
   height: 100%;
@@ -55,10 +60,23 @@
 .divContacto .informacion{
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 35%;
   transform: translate(-50%,-50%);
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   max-width: 50%;
   width: 800px;
+}
+
+.divContacto .informacion p{
+  display: flex;
+  align-self:flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.divContacto .informacion img{
+  padding-right: 20px;
 }
